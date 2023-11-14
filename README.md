@@ -89,15 +89,36 @@ CryptoView is the ultimate tool for cryptocurrency enthusiasts, traders, and inv
 <img src="./wireframes/interactivePrototype.gif">
 
 ## Schema 
+### Created the story board still left to link with the decoded data
+<img src="./wireframes/update.gif">
 
-[This section will be completed in Unit 9]
 
 ### Models
 
-[Add table of models]
+
 
 ### Networking
+API used 
+- https://min-api.cryptocompare.com/data/all/coinlist
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+## Reflection
+
+### 1. What went well during this unit?
+
+Setting up the files
+
+### 2. What were some challenges your group faced in this unit?
+
+Trying to figure out struct 
+
+### Did you finish all of your tasks in your sprint plan for this week? If you did not finish all of the planned tasks, how would you prioritize the remaining tasks on your list?
+
+yes, would focus more on the design
+
+### Which features and user stories would you consider “at risk”? How will you change your plan if those items remain “at risk”?
+
+Search option
+
+### 5. What additional support will you need in upcoming units as you continue to work on your final project?
+
+null
