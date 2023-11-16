@@ -1,6 +1,8 @@
 //
 //  AppDelegate.swift
-//  ios101-project6-tumblr
+//  CryptoView
+//
+//  Created by Pranav J on 11/15/23.
 //
 
 import UIKit

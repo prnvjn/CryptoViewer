@@ -48,7 +48,7 @@ CryptoView is the ultimate tool for cryptocurrency enthusiasts, traders, and inv
 ### 2. Screen Archetypes
 
 
-- [ ]  Home/ View All currency
+- [x]  Home/ View All currency
 * User can view all the currencies
 * User can search their choice of crypto currency
 

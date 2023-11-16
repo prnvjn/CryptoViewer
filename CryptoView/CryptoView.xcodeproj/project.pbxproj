@@ -7,119 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C37B6A132AE4505F005F7115 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B6A122AE4505F005F7115 /* DetailViewController.swift */; };
-		ED54EF4D29D5382800B6AD22 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */; };
-		ED59161029BC307D000F25AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59160F29BC307D000F25AE /* AppDelegate.swift */; };
-		ED59161229BC307D000F25AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59161129BC307D000F25AE /* SceneDelegate.swift */; };
-		ED59161429BC307D000F25AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59161329BC307D000F25AE /* ViewController.swift */; };
-		ED59161729BC307D000F25AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59161529BC307D000F25AE /* Main.storyboard */; };
-		ED59161929BC307E000F25AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED59161829BC307E000F25AE /* Assets.xcassets */; };
-		ED59161C29BC307E000F25AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59161A29BC307E000F25AE /* LaunchScreen.storyboard */; };
-		ED59162429BC4921000F25AE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59162329BC4921000F25AE /* Post.swift */; };
-		ED59162629BC4CC8000F25AE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59162529BC4CC8000F25AE /* PostCell.swift */; };
-		ED59162929BC50E7000F25AE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = ED59162829BC50E7000F25AE /* Nuke */; };
+		C32CC6742B055B27006FFCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6732B055B27006FFCBF /* AppDelegate.swift */; };
+		C32CC6762B055B27006FFCBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6752B055B27006FFCBF /* SceneDelegate.swift */; };
+		C32CC6782B055B27006FFCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6772B055B27006FFCBF /* ViewController.swift */; };
+		C32CC67B2B055B27006FFCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32CC6792B055B27006FFCBF /* Main.storyboard */; };
+		C32CC67D2B055B2B006FFCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32CC67C2B055B2B006FFCBF /* Assets.xcassets */; };
+		C32CC6802B055B2B006FFCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32CC67E2B055B2B006FFCBF /* LaunchScreen.storyboard */; };
+		C32CC6882B055C71006FFCBF /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6872B055C71006FFCBF /* ApiCaller.swift */; };
+		C32CC68A2B0566B0006FFCBF /* CrytoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */; };
+		C32CC68C2B056AB1006FFCBF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC68B2B056AB1006FFCBF /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C37B6A122AE4505F005F7115 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		ED59160C29BC307D000F25AE /* ios101-project6-tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-project6-tumblr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED59160F29BC307D000F25AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED59161129BC307D000F25AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED59161329BC307D000F25AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ED59161629BC307D000F25AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED59161829BC307E000F25AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED59161B29BC307E000F25AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED59161D29BC307E000F25AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED59162329BC4921000F25AE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		ED59162529BC4CC8000F25AE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		C32CC6702B055B27006FFCBF /* CryptoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32CC6732B055B27006FFCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C32CC6752B055B27006FFCBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C32CC6772B055B27006FFCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C32CC67A2B055B27006FFCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C32CC67C2B055B2B006FFCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32CC67F2B055B2B006FFCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C32CC6812B055B2B006FFCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32CC6872B055C71006FFCBF /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoTableViewCell.swift; sourceTree = "<group>"; };
+		C32CC68B2B056AB1006FFCBF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED59160929BC307D000F25AE /* Frameworks */ = {
+		C32CC66D2B055B27006FFCBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED59162929BC50E7000F25AE /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED59160329BC307D000F25AE = {
+		C32CC6672B055B27006FFCBF = {
 			isa = PBXGroup;
 			children = (
-				ED59160E29BC307D000F25AE /* ios101-project6-tumblr */,
-				ED59160D29BC307D000F25AE /* Products */,
+				C32CC6722B055B27006FFCBF /* CryptoView */,
+				C32CC6712B055B27006FFCBF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED59160D29BC307D000F25AE /* Products */ = {
+		C32CC6712B055B27006FFCBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED59160C29BC307D000F25AE /* ios101-project6-tumblr.app */,
+				C32CC6702B055B27006FFCBF /* CryptoView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED59160E29BC307D000F25AE /* ios101-project6-tumblr */ = {
+		C32CC6722B055B27006FFCBF /* CryptoView */ = {
 			isa = PBXGroup;
 			children = (
-				ED59160F29BC307D000F25AE /* AppDelegate.swift */,
-				ED59161129BC307D000F25AE /* SceneDelegate.swift */,
-				ED59161329BC307D000F25AE /* ViewController.swift */,
-				ED59162529BC4CC8000F25AE /* PostCell.swift */,
-				ED59162329BC4921000F25AE /* Post.swift */,
-				ED59161529BC307D000F25AE /* Main.storyboard */,
-				ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */,
-				ED59161829BC307E000F25AE /* Assets.xcassets */,
-				ED59161A29BC307E000F25AE /* LaunchScreen.storyboard */,
-				ED59161D29BC307E000F25AE /* Info.plist */,
-				C37B6A122AE4505F005F7115 /* DetailViewController.swift */,
+				C32CC6732B055B27006FFCBF /* AppDelegate.swift */,
+				C32CC6752B055B27006FFCBF /* SceneDelegate.swift */,
+				C32CC6772B055B27006FFCBF /* ViewController.swift */,
+				C32CC68B2B056AB1006FFCBF /* Models.swift */,
+				C32CC6792B055B27006FFCBF /* Main.storyboard */,
+				C32CC67C2B055B2B006FFCBF /* Assets.xcassets */,
+				C32CC67E2B055B2B006FFCBF /* LaunchScreen.storyboard */,
+				C32CC6812B055B2B006FFCBF /* Info.plist */,
+				C32CC6872B055C71006FFCBF /* ApiCaller.swift */,
+				C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */,
 			);
-			path = "ios101-project6-tumblr";
+			path = CryptoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED59160B29BC307D000F25AE /* ios101-project6-tumblr */ = {
+		C32CC66F2B055B27006FFCBF /* CryptoView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED59162029BC307E000F25AE /* Build configuration list for PBXNativeTarget "ios101-project6-tumblr" */;
+			buildConfigurationList = C32CC6842B055B2B006FFCBF /* Build configuration list for PBXNativeTarget "CryptoView" */;
 			buildPhases = (
-				ED59160829BC307D000F25AE /* Sources */,
-				ED59160929BC307D000F25AE /* Frameworks */,
-				ED59160A29BC307D000F25AE /* Resources */,
+				C32CC66C2B055B27006FFCBF /* Sources */,
+				C32CC66D2B055B27006FFCBF /* Frameworks */,
+				C32CC66E2B055B27006FFCBF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ios101-project6-tumblr";
-			packageProductDependencies = (
-				ED59162829BC50E7000F25AE /* Nuke */,
-			);
-			productName = "ios101-project5-tumbler";
-			productReference = ED59160C29BC307D000F25AE /* ios101-project6-tumblr.app */;
+			name = CryptoView;
+			productName = CryptoView;
+			productReference = C32CC6702B055B27006FFCBF /* CryptoView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED59160429BC307D000F25AE /* Project object */ = {
+		C32CC6682B055B27006FFCBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					ED59160B29BC307D000F25AE = {
-						CreatedOnToolsVersion = 14.2;
+					C32CC66F2B055B27006FFCBF = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = ED59160729BC307D000F25AE /* Build configuration list for PBXProject "ios101-project6-tumblr" */;
+			buildConfigurationList = C32CC66B2B055B27006FFCBF /* Build configuration list for PBXProject "CryptoView" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,62 +119,58 @@
 				en,
 				Base,
 			);
-			mainGroup = ED59160329BC307D000F25AE;
-			packageReferences = (
-				ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */,
-			);
-			productRefGroup = ED59160D29BC307D000F25AE /* Products */;
+			mainGroup = C32CC6672B055B27006FFCBF;
+			productRefGroup = C32CC6712B055B27006FFCBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED59160B29BC307D000F25AE /* ios101-project6-tumblr */,
+				C32CC66F2B055B27006FFCBF /* CryptoView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED59160A29BC307D000F25AE /* Resources */ = {
+		C32CC66E2B055B27006FFCBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED59161C29BC307E000F25AE /* LaunchScreen.storyboard in Resources */,
-				ED59161929BC307E000F25AE /* Assets.xcassets in Resources */,
-				ED59161729BC307D000F25AE /* Main.storyboard in Resources */,
+				C32CC6802B055B2B006FFCBF /* LaunchScreen.storyboard in Resources */,
+				C32CC67D2B055B2B006FFCBF /* Assets.xcassets in Resources */,
+				C32CC67B2B055B27006FFCBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED59160829BC307D000F25AE /* Sources */ = {
+		C32CC66C2B055B27006FFCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED59161429BC307D000F25AE /* ViewController.swift in Sources */,
-				ED59161029BC307D000F25AE /* AppDelegate.swift in Sources */,
-				ED59161229BC307D000F25AE /* SceneDelegate.swift in Sources */,
-				ED59162429BC4921000F25AE /* Post.swift in Sources */,
-				ED54EF4D29D5382800B6AD22 /* String+Extensions.swift in Sources */,
-				ED59162629BC4CC8000F25AE /* PostCell.swift in Sources */,
-				C37B6A132AE4505F005F7115 /* DetailViewController.swift in Sources */,
+				C32CC68A2B0566B0006FFCBF /* CrytoTableViewCell.swift in Sources */,
+				C32CC6782B055B27006FFCBF /* ViewController.swift in Sources */,
+				C32CC6742B055B27006FFCBF /* AppDelegate.swift in Sources */,
+				C32CC68C2B056AB1006FFCBF /* Models.swift in Sources */,
+				C32CC6762B055B27006FFCBF /* SceneDelegate.swift in Sources */,
+				C32CC6882B055C71006FFCBF /* ApiCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED59161529BC307D000F25AE /* Main.storyboard */ = {
+		C32CC6792B055B27006FFCBF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED59161629BC307D000F25AE /* Base */,
+				C32CC67A2B055B27006FFCBF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ED59161A29BC307E000F25AE /* LaunchScreen.storyboard */ = {
+		C32CC67E2B055B2B006FFCBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED59161B29BC307E000F25AE /* Base */,
+				C32CC67F2B055B2B006FFCBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ED59161E29BC307E000F25AE /* Debug */ = {
+		C32CC6822B055B2B006FFCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -250,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		ED59161F29BC307E000F25AE /* Release */ = {
+		C32CC6832B055B2B006FFCBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -304,15 +292,16 @@
 			};
 			name = Release;
 		};
-		ED59162129BC307E000F25AE /* Debug */ = {
+		C32CC6852B055B2B006FFCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z68CS56VVQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios101-project6-tumblr/Info.plist";
+				INFOPLIST_FILE = CryptoView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-project6-tumblr";
+				PRODUCT_BUNDLE_IDENTIFIER = nav.CryptoView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,15 +320,16 @@
 			};
 			name = Debug;
 		};
-		ED59162229BC307E000F25AE /* Release */ = {
+		C32CC6862B055B2B006FFCBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z68CS56VVQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios101-project6-tumblr/Info.plist";
+				INFOPLIST_FILE = CryptoView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-project6-tumblr";
+				PRODUCT_BUNDLE_IDENTIFIER = nav.CryptoView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,44 +351,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED59160729BC307D000F25AE /* Build configuration list for PBXProject "ios101-project6-tumblr" */ = {
+		C32CC66B2B055B27006FFCBF /* Build configuration list for PBXProject "CryptoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED59161E29BC307E000F25AE /* Debug */,
-				ED59161F29BC307E000F25AE /* Release */,
+				C32CC6822B055B2B006FFCBF /* Debug */,
+				C32CC6832B055B2B006FFCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED59162029BC307E000F25AE /* Build configuration list for PBXNativeTarget "ios101-project6-tumblr" */ = {
+		C32CC6842B055B2B006FFCBF /* Build configuration list for PBXNativeTarget "CryptoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED59162129BC307E000F25AE /* Debug */,
-				ED59162229BC307E000F25AE /* Release */,
+				C32CC6852B055B2B006FFCBF /* Debug */,
+				C32CC6862B055B2B006FFCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		ED59162829BC50E7000F25AE /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED59162729BC50E7000F25AE /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = ED59160429BC307D000F25AE /* Project object */;
+	rootObject = C32CC6682B055B27006FFCBF /* Project object */;
 }
