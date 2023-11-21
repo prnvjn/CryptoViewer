@@ -18,9 +18,19 @@ final class ApiCaller{
     
     private init(){}
     
+    public var icons: [Icon] = []
+    
+    private var whenReadyBlock: ((Result<[Crypto],Error>)-> Void)?
+    
     public func getAllCrytoData(
         completion: @escaping(Result<[Crypto],Error>)-> Void
     ){
+        guard !icons.isEmpty else{
+            whenReadyBlock = completion
+            return
+        }
+        
+        
         guard let url = URL(string: Constants.assetsEndpoint + "?apikey=" + Constants.apikey)else{
             return
         }
@@ -42,5 +52,30 @@ final class ApiCaller{
         }
         task.resume()
         
+    }
+    
+    
+    public func getAllIcons(){
+        guard let url = URL(string: "https://rest.coinapi.io/v1/assets/icons/55/?apikey=B7DC6682-BCC6-449F-A7D6-F75F11CF3BF4")else{
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url){ [weak self]data,_,error in guard let data = data, error == nil else {
+                return
+            }
+            do{
+                self?.icons = try JSONDecoder().decode([Icon].self, from: data)
+                if let completion = self?.whenReadyBlock{
+                    self?.getAllCrytoData(completion: completion)
+    //
+                }
+                
+              
+             
+            }
+            catch{
+               print(error)
+            }
+        }
+        task.resume()
     }
 }

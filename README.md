@@ -53,9 +53,9 @@ CryptoView is the ultimate tool for cryptocurrency enthusiasts, traders, and inv
 * User can search their choice of crypto currency
 
 - [ ] Favourite currency 
-* User can view their favourite currency
+* User can view their favourite currency 
 
-- [ ] Detail screen
+- [X] Detail screen
 * User can mark their favorite currency
 *  User can get in detail view of the currency the tap
 
@@ -93,13 +93,19 @@ CryptoView is the ultimate tool for cryptocurrency enthusiasts, traders, and inv
 <img src="./wireframes/update.gif">
 
 
+
+
+
+### Final Gif 
+<img src="./wireframes/final.gif">
+
 ### Models
 
 
 
 ### Networking
 API used 
-- https://min-api.cryptocompare.com/data/all/coinlist
+- https://www.coinapi.io
 
 ## Reflection
 
@@ -109,7 +115,7 @@ Setting up the files
 
 ### 2. What were some challenges your group faced in this unit?
 
-Trying to figure out struct 
+The api which I chose lacked detail information the images were also in a different api call had to join them.
 
 ### Did you finish all of your tasks in your sprint plan for this week? If you did not finish all of the planned tasks, how would you prioritize the remaining tasks on your list?
 

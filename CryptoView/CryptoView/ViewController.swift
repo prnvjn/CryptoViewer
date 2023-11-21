@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return tableView
     }()
 
-    
+    var cryto: CrytoTableViewCell!
     private var viewModels = [CryptoTableViewCellModel]()
     static let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let formatter = ViewController.numberFormatter
                     let priceString = formatter.string(from: NSNumber(value: price))
 
-                   return CryptoTableViewCellModel(name: $0.name ?? "N/A", symbol: $0.asset_id, price: priceString ?? "N/A")
+                    return CryptoTableViewCellModel(name: $0.name ?? "N/A", symbol: $0.asset_id, price: priceString ?? "N/A", data_start: $0.data_start, data_end: $0.data_end)
                 })
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
@@ -57,6 +57,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print("Error: \(error)")
             }
         }
+        
+        
+        
+       
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else{
+            return
+        }
+        let selectedCrypto = viewModels[selectedIndexPath.row]
+        guard let detailViewController = segue.destination as? DetailViewController else {
+            return
+        }
+  
+        detailViewController.cryto = selectedCrypto
+
     }
 
     override func viewDidLayoutSubviews() {
@@ -73,12 +90,15 @@ super.viewDidLayoutSubviews()
             withIdentifier: "CrytoTableVIewCEll",
             for: indexPath) as! CrytoTableViewCell
 //
+    
         cell.configure(with: viewModels[indexPath.row])
 //      let cell = UITableViewCell()
 //        cell.textLabel?.text = "hello"
         return cell
                 
     }
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }

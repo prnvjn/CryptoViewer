@@ -16,6 +16,8 @@
 		C32CC6882B055C71006FFCBF /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6872B055C71006FFCBF /* ApiCaller.swift */; };
 		C32CC68A2B0566B0006FFCBF /* CrytoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */; };
 		C32CC68C2B056AB1006FFCBF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32CC68B2B056AB1006FFCBF /* Models.swift */; };
+		C38B7EE82B0C076A002E9630 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B7EE72B0C076A002E9630 /* DetailViewController.swift */; };
+		C38B7EEB2B0C70A1002E9630 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = C38B7EEA2B0C70A1002E9630 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,7 @@
 		C32CC6872B055C71006FFCBF /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoTableViewCell.swift; sourceTree = "<group>"; };
 		C32CC68B2B056AB1006FFCBF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C38B7EE72B0C076A002E9630 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38B7EEB2B0C70A1002E9630 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,7 @@
 				C32CC6812B055B2B006FFCBF /* Info.plist */,
 				C32CC6872B055C71006FFCBF /* ApiCaller.swift */,
 				C32CC6892B0566B0006FFCBF /* CrytoTableViewCell.swift */,
+				C38B7EE72B0C076A002E9630 /* DetailViewController.swift */,
 			);
 			path = CryptoView;
 			sourceTree = "<group>";
@@ -92,6 +97,9 @@
 			dependencies = (
 			);
 			name = CryptoView;
+			packageProductDependencies = (
+				C38B7EEA2B0C70A1002E9630 /* Nuke */,
+			);
 			productName = CryptoView;
 			productReference = C32CC6702B055B27006FFCBF /* CryptoView.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = C32CC6672B055B27006FFCBF;
+			packageReferences = (
+				C38B7EE92B0C70A1002E9630 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = C32CC6712B055B27006FFCBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,6 +164,7 @@
 				C32CC68C2B056AB1006FFCBF /* Models.swift in Sources */,
 				C32CC6762B055B27006FFCBF /* SceneDelegate.swift in Sources */,
 				C32CC6882B055C71006FFCBF /* ApiCaller.swift in Sources */,
+				C38B7EE82B0C076A002E9630 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C38B7EE92B0C70A1002E9630 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C38B7EEA2B0C70A1002E9630 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C38B7EE92B0C70A1002E9630 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C32CC6682B055B27006FFCBF /* Project object */;
 }

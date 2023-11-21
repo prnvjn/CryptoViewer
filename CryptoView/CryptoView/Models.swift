@@ -13,8 +13,15 @@ struct Crypto: Codable{
     let name:String?
     let price_usd: Float?
     let id_icon: String?
+    let data_start: String?
+    let data_end: String?
     
-    
+}
+
+
+struct Icon: Codable{
+    let asset_id: String?
+    let url: String?
 }
 //"asset_id": "LTC",
 //       "name": "Litecoin",
